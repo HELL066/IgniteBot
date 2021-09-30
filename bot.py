@@ -212,7 +212,7 @@ async def addmeme(ctx, *, meme=None):
         channel = bot.get_channel(891513495982600223)
         await channel.send(f"```\n{myList}\n```")
     except Exception:
-        await ctx.send("Please put a link after the addmeme message\nFor example: ignt addmeme https://discord.com")
+        await ctx.send("Please put a link after the ignt addmeme command\nFor example: ignt addmeme https://discord.com")
 
 
 meme_channel = [891568495098200084, 870116673980616785]
