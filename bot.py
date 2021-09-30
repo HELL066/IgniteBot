@@ -77,15 +77,9 @@ async def on_message(message):
     if bot.user == message.author:
         return
     if message.channel.id == 891569931777368064:
-        if "what is ignite" in msg:
-            await message.reply(
-                "Ignite is Grace Christian Church of the Philippines' High School Ministry. Our goal is for every high school student to have ignited hearts for Christ.")
         if "ignite" == msg:
             await message.reply(
-                "Ignite is Grace Christian Church of the Philippines' High School Ministry. Our goal is for every high school student to have ignited hearts for Christ.")
-        elif "ignite is what" in msg:
-            await message.reply(
-                "Ignite is Grace Christian Church of the Philippines' High School Ministry. Our goal is for every high school student to have ignited hearts for Christ.")
+                "Ignite is Grace Christian Church of the Philippines' High School Ministry. Our goal is for every high school student to have ignited hearts for Christ."
         elif "coil" in msg:
             await message.reply(
                 "COIL is Ignite Ministry's Official Discord Server. COIL was named after a car's ignition coil that ignites power in a car's engine. In COIL, we desire to provide a safe space for all high school students so that they will be encouraged to continue igniting their spiritual lives for God's glory.")
@@ -98,16 +92,16 @@ async def on_message(message):
         elif "allowed to join ignite" in msg:
             await message.reply(
                 "Definitely, yes! As long as you're a high school student, you are more that welcome to join us!")
-        elif "i need someone to talk to" in msg:
+        elif "i need someone to talk" in msg:
             await message.reply(
                 "Your Ignite Ahyas and Achis are always here for you! We want to journey life with you, whether it be in the highs or even through the lows. Simply send us a message here in Discord or FB Messenger! We will try our best to be of help to you.")
-        elif "grace christian church of the philippines" in msg:
+        elif "grace christian church" in msg:
             await message.reply(
                 "GCCP is our home! To know more about our church, click on this link: ( https://gccp.org.ph/new-here-2/ )")
         elif "gccp" in msg:
             await message.reply(
                 "GCCP is our home! To know more about our church, click on this link: ( https://gccp.org.ph/new-here-2/ )")
-        elif "is ignite's fb page and fb group different" in msg:
+        elif "is ignite's fb" in msg:
             await message.reply(
                 "Yes! Ignite's FB page is public, while our group is only for Igniters (high school studnets) or their parent's FB account in case they don't have one. This is to ensure the safety of our Igniters! To follow our FB page, click on this link: ( https://www.facebook.com/GCCPHighSchool/ ) To join our FB group, click on this link: ( https://www.facebook.com/groups/322843642426914/?ref=share )")
         elif "what if i am not a chistian can i attend ignite" in msg:
@@ -128,11 +122,6 @@ async def on_message(message):
         elif "coil's study hall" in msg:
             await message.reply(
                 "Think of it as our online coffee shop where you and your friends can gather and study together! Check out the Study Hall's rules channel for more information!")
-        elif "ahyas and achis" in msg:
-            await message.reply(
-                "https://cdn.discordapp.com/attachments/757130997178302506/888576932407545876/0001-7791209199_20210914_014317_0000.png")
-            await message.reply(
-                "https://cdn.discordapp.com/attachments/757130997178302506/888974696371077150/Cyber.png")
         elif "ahya" in msg:
             await message.reply(
                 "https://cdn.discordapp.com/attachments/757130997178302506/888576932407545876/0001-7791209199_20210914_014317_0000.png")
@@ -174,9 +163,6 @@ async def on_message(message):
         elif "ignite" in msg and "more" in msg and "fun" in msg:
             await message.reply("Absolutely not! The program for both Ignite ministries are made by the same team!")
         elif "series" in msg and "ignite" in msg and "night":
-            await message.reply(
-                "To know more about our current series, go ahead and click on the link! https://www.facebook.com/GCCPHighSchool")
-        elif "series" in msg and "ignite" in msg and "sunday":
             await message.reply(
                 "To know more about our current series, go ahead and click on the link! https://www.facebook.com/GCCPHighSchool")
         elif "student" in msg and "leader" in msg:
@@ -226,7 +212,7 @@ async def addmeme(ctx, *, meme=None):
         channel = bot.get_channel(891513495982600223)
         await channel.send(f"```\n{myList}\n```")
     except Exception:
-        await ctx.send("Please put a link after the addmeme message\nfor example: ignt addmeme https://discord.com")
+        await ctx.send("Please put a link after the addmeme message\nFor example: ignt addmeme https://discord.com")
 
 
 meme_channel = [891568495098200084, 870116673980616785]
